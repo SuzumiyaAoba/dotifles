@@ -1,0 +1,45 @@
+xdg-user-dirs-gtk
+
+# GUI
+## Window Manager
+i3
+rofi
+thunderbird
+fonts-symbola
+ipe
+
+## IME
+uim
+uim-skk
+
+# Editor
+vim
+emacs
+
+## for Emacs
+libpng-dev
+zlib1g-dev
+libpoppler-glib-dev
+libpoppler-private-dev
+
+
+# Tools
+fish
+tmux
+peco
+git
+tig
+silversearcher-ag
+source-highlight
+
+build-essential
+devscripts
+texinfo
+automake
+autoconf
+
+## Programming
+opam
+golang
+clojure
+ghc

@@ -1,0 +1,8 @@
+github.com/rogpeppe/godef
+-u github.com/nsf/gocode
+github.com/golang/lint/golint
+github.com/kisielk/errcheck
+
+github.com/motemen/ghq
+github.com/x/tools/cmd/goimports
+-u github.com/golang/dep/cmd/dep
