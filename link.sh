@@ -12,14 +12,6 @@ ignores='
 
 dotfiles=(`(echo -n "${dotfiles[@]}" "${ignores[@]}" | sort -u; echo -n "${ignores[@]}") | sort | uniq -u`)
 
-sfrm () {
-    if [ -L $1 ]; then
-        unlink $1
-    else
-        rm -rf $1
-    fi
-}
-
 dotfiles=(${dotfiles[@]} `find .config -type f`)
 
 for e in ${dotfiles[@]}; do
