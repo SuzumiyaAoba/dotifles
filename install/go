@@ -4,5 +4,7 @@ github.com/golang/lint/golint
 github.com/kisielk/errcheck
 
 github.com/motemen/ghq
-github.com/x/tools/cmd/goimports
+golang.org/x/tools/cmd/goimports
 -u github.com/golang/dep/cmd/dep
+
+github.com/gohugoio/hugo
