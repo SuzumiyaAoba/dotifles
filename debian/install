@@ -24,12 +24,10 @@ libpoppler-private-dev
 
 
 # Tools
-fish
+zsh
 tmux
-peco
 git
 tig
-silversearcher-ag
 source-highlight
 
 build-essential
@@ -37,6 +35,10 @@ devscripts
 texinfo
 automake
 autoconf
+gawk
+
+tree
+jq
 
 ## Programming
 opam
