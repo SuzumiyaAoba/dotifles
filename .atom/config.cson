@@ -1,13 +1,39 @@
 "*":
+  "advanced-open-file":
+    createDirectories: true
+    createFileInstantly: true
+    fuzzyMatch: true
   core:
     disabledPackages: [
       "spell-check"
     ]
+    packagesWithKeymapsDisabled: [
+      "go-plus"
+      "douglas"
+      "advanced-open-file"
+      "github"
+      "ctrl-dir-scroll"
+    ]
+    telemetryConsent: "no"
   editor:
     fontFamily: "Cica, Menlo, Consolas, DejaVu Sans Mono, monospace"
     fontSize: 21
     invisibles: {}
   "exception-reporting":
     userId: "9dfd715f-cb44-4cd5-ba5e-28a5f385fe72"
+  "go-plus":
+    config:
+      gopath: "~/go"
+  minimap:
+    plugins:
+      "find-and-replace": true
+      "find-and-replaceDecorationsZIndex": 0
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
+      "highlight-selected": true
+      "highlight-selectedDecorationsZIndex": 0
   "remove-all-keybindings":
     exceptPlatformKeymap: false
+  tabs: {}
+  welcome:
+    showOnStartup: false
