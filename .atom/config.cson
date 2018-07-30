@@ -1,0 +1,13 @@
+"*":
+  core:
+    disabledPackages: [
+      "spell-check"
+    ]
+  editor:
+    fontFamily: "Cica, Menlo, Consolas, DejaVu Sans Mono, monospace"
+    fontSize: 21
+    invisibles: {}
+  "exception-reporting":
+    userId: "9dfd715f-cb44-4cd5-ba5e-28a5f385fe72"
+  "remove-all-keybindings":
+    exceptPlatformKeymap: false
