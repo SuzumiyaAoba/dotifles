@@ -10,9 +10,9 @@
     packagesWithKeymapsDisabled: [
       "go-plus"
       "douglas"
-      "advanced-open-file"
       "github"
       "ctrl-dir-scroll"
+      "advanced-open-file"
     ]
     telemetryConsent: "no"
   editor:
@@ -32,6 +32,42 @@
       "git-diffDecorationsZIndex": 0
       "highlight-selected": true
       "highlight-selectedDecorationsZIndex": 0
+  "platformio-ide-terminal":
+    ansiColors:
+      normal:
+        black: "#282c34"
+        blue: "#61afef"
+        cyan: "#56b6c2"
+        green: "#98c379"
+        magenta: "#c678dd"
+        red: "#e06c75"
+        white: "#abb2bf"
+        yellow: "#e5c07b"
+      zBright:
+        brightBlack: "#454c59"
+        brightBlue: "#69bbff"
+        brightCyan: "#66d9e8"
+        brightGreen: "#b5e890"
+        brightMagenta: "#e48aff"
+        brightRed: "#ff7a85"
+        brightWhite: "#cfd7e6"
+        brightYellow: "#ffd68a"
+    core:
+      mapTerminalsTo: "Folder"
+    iconColors:
+      blue: "#61afef"
+      cyan: "#56b6c2"
+      green: "#98c379"
+      magenta: "#c678dd"
+      orange: "#d19965"
+      pink: "#c578dd"
+      purple: "#d682f0"
+      red: "#df6b75"
+      yellow: "#e2c08d"
+    style:
+      theme: "one-dark"
+    toggles:
+      selectToCopy: false
   "remove-all-keybindings":
     exceptPlatformKeymap: false
   tabs: {}

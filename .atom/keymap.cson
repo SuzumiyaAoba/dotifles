@@ -18,27 +18,31 @@
   'alt-b': 'editor:move-to-previous-word-boundary'
 
   # page
-  'ctrl-v': 'core:page-down'
-  'alt-v': 'core:page-up'
+  # 'ctrl-v': 'keyboard-scroll:scrollDownWithCursor'
+  # 'alt-v': 'keyboard-scroll:scrollUpWithCursor'
 
   # delete
   'ctrl-h': 'core:backspace'
   'ctrl-d': 'core:delete'
   'backspace': 'core:backspace'
-  'ctrl-k': 'editor:delete-line'
+  'ctrl-k': 'editor:cut-to-end-of-line'
   'alt-backspace': 'editor:delete-to-beginning-of-word'
   'alt-delete': 'editor:delete-to-end-of-word'
 
   # undo
   'ctrl-/': 'core:undo'
 
-  'ctrl-\\': 'tree-view:toggle'
+  'ctrl-;': 'tree-view:toggle'
+  'ctrl-:': 'tree-view:toggle-focus'
   'alt-x': 'command-palette:toggle'
 
   # tab
   'ctrl-z n': 'pane:show-next-item'
   'ctrl-z p': 'pane:show-previous-item'
   'ctrl-z k': 'tabs:close-tab'
+
+  # buffer
+  'ctrl-x b': 'fuzzy-finder:toggle-buffer-finder'
 
   # pane
   'ctrl-x 0': 'pane:close'
@@ -68,6 +72,7 @@
   'ctrl-p': 'advanced-open-file:move-cursor-up'
   'alt->': 'advanced-open-file:move-cursor-bottom'
   'alt-<': 'advanced-open-file:move-cursor-top'
+  'ctrl-enter': 'application:add-project-folder'
 
 # editor
 'atom-text-editor':
@@ -83,8 +88,12 @@
   # comment
   'alt-?': 'editor:toggle-line-comments'
 
+  # color picker
+  'ctrl-alt-c': 'color-picker:open'
+
 # tree-view
 '.tree-view':
-    'enter': 'tree-view:expand-item'
+    'enter': 'tree-view:open-selected-entry'
     'R': 'tree-view:move'
-    'D': 'tree-view:delete'
+    'D': 'tree-view:remove'
+    'backspace': 'tree-view:remove-project-folder'
