@@ -1,6 +1,8 @@
 # global
 'body':
   'ctrl-y': 'core:paste'
+  'alt-w': 'custom:copy-selected-area'
+  'ctrl-w': 'core:cut'
   'enter': 'core:enter'
 
   # move cursor
@@ -20,6 +22,9 @@
   # page
   # 'ctrl-v': 'keyboard-scroll:scrollDownWithCursor'
   # 'alt-v': 'keyboard-scroll:scrollUpWithCursor'
+
+  # select
+  'ctrl-space': 'text-select-mode:toggle'
 
   # delete
   'ctrl-h': 'core:backspace'
@@ -74,8 +79,12 @@
   'alt-<': 'advanced-open-file:move-cursor-top'
   'ctrl-enter': 'application:add-project-folder'
 
+'atom-text-editor:not([mini])':
+  'alt-y': 'clipboard-plus:toggle'
+
 # editor
 'atom-text-editor':
+
   'alt-g': 'go-to-line:toggle'
   'ctrl-s': 'find-and-replace:show'
 
@@ -93,7 +102,7 @@
 
 # tree-view
 '.tree-view':
-    'enter': 'tree-view:open-selected-entry'
-    'R': 'tree-view:move'
-    'D': 'tree-view:remove'
-    'backspace': 'tree-view:remove-project-folder'
+  'enter': 'tree-view:open-selected-entry'
+  'R': 'tree-view:move'
+  'D': 'tree-view:remove'
+  'backspace': 'tree-view:remove-project-folder'

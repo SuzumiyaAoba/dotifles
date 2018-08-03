@@ -3,6 +3,14 @@
     createDirectories: true
     createFileInstantly: true
     fuzzyMatch: true
+  "block-cursor":
+    global:
+      blinkOff:
+        borderColor: "rgba(0, 0, 0, 0)"
+        borderStyle: "none"
+      blinkOn:
+        backgroundColor: "rgba(171, 178, 191, 0.5)"
+        borderStyle: "none"
   core:
     disabledPackages: [
       "spell-check"
