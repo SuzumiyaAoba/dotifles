@@ -1,0 +1,39 @@
+# Mac
+.DS_Store
+
+# temp
+eshell/
+auto-save-list/
+backups/
+url/
+undohist/
+ensime/
+recentf
+elscreen
+ac-comphist.dat
+*~
+
+.mc-lists.el
+
+# packages
+el-get/
+elpa/
+custom.el
+
+# projectile
+projectile-bookmarks.eld
+projectile.cache
+
+# binary
+*.elc
+
+# ssh
+tramp
+
+# flymake
+semanticdb/
+
+\#recentf\#
+
+# hugo
+hugo-conf.el
