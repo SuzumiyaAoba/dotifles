@@ -328,8 +328,9 @@ you should place your code here."
   (spacemacs/set-leader-keys "::" 'helm-ghq)
 
   ;; all-the-icons
-  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
   (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
+  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+  (setq inhibit-compacting-font-caches t)
 
   ;; ddskk
   (add-hook 'isearch-hook 'skk-isearch-mode-cleanup)
