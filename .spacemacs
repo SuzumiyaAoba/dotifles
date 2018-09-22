@@ -323,12 +323,13 @@ you should place your code here."
   ;; default
   (smartparens-global-mode t)
 
-  ;; all-the-icons
-  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
-
   ;; keybinding
   (spacemacs/declare-prefix ":" "use frequently command prefix")
   (spacemacs/set-leader-keys "::" 'helm-ghq)
+
+  ;; all-the-icons
+  (add-hook 'dired-mode-hook 'all-the-icons-dired-mode)
+  (setq neo-theme (if (display-graphic-p) 'icons 'arrow))
 
   ;; ddskk
   (add-hook 'isearch-hook 'skk-isearch-mode-cleanup)
