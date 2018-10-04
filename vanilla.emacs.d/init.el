@@ -26,6 +26,11 @@
 (el-get-bundle diminish)
 (use-package diminish)
 
+;; general
+
+(el-get-bundle general)
+(use-package general)
+
 ;; init-loader
 
 (el-get-bundle init-loader)

@@ -23,7 +23,8 @@
 
 ;; tab
 
-(el-get-bundle elscreen)
+(el-get-bundle powerline)
+(el-get-bundle perspeen)
 
 ;; search
 
