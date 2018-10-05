@@ -1,0 +1,5 @@
+(:name racer
+       :description "Racer support for Emacs"
+       :type github
+       :depends (pos-tip xterm-color)
+       :pkgname "racer-rust/emacs-racer")

@@ -1,0 +1,4 @@
+(:name perspeen
+       :description "A emacs plugin for multi workspace"
+       :type github
+       :pkgname "seudut/perspeen")

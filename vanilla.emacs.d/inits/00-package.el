@@ -23,7 +23,8 @@
 
 ;; tab
 
-(el-get-bundle elscreen)
+(el-get-bundle powerline)
+(el-get-bundle perspeen)
 
 ;; search
 
@@ -164,3 +165,12 @@
 ;; Hugo
 
 (el-get-bundle easy-hugo)
+
+;; Rust
+
+(el-get-bundle rustic)
+(el-get-bundle racer)
+
+;; language server protocol
+
+(el-get-bundle lsp-mode)
