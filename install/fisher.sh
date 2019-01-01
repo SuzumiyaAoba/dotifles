@@ -10,5 +10,5 @@ packages=(`lines fisher | xargs`)
 
 for package in "${packages[@]}"
 do
-    fish -c "fisher ${package}"
+    fish -c "fisher add ${package}"
 done
