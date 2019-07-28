@@ -1,21 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 case "$OSTYPE" in
     darwin*)
         brew install unzip fontconfig
 esac
 
-curl -L -O https://github.com/miiton/Cica/releases/download/v4.1.1/Cica-v4.1.1.zip -o /var/tmp/Cica.zip
+TMP_DIR=/var/tmp
+
+curl https://github.com/miiton/Cica/releases/download/v5.0.1/Cica_v5.0.1_with_emoji.zip -o "${TMP_DIR}/Cica.zip"
 
 case "$OSTYPE" in
     darwin*)
-        brew install wget unzip fontconfig
-        unzip -u /var/tmp/Cica.zip -d ~/Library/Fonts/Cica
-        ;;
+        INSTALL_DIR=~/Library/Fonts/Cica ;;
     linux*)
-        mkdir ~/.fonts
-        unzip -u /var/tmp/Cica.zip -d ~/.fonts/Cica
-        ;;
+        INSTALL_DIR=~/.fonts/Cica ;;
 esac
 
+unzip -u "${TMP_DIR}/Cica.zip" -d "$INSTALL_DIR"
 sudo fc-cache -fv
