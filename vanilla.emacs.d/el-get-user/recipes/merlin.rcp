@@ -1,9 +1,0 @@
-(:name merlin
-       :description "Context sensitive completion for OCaml in Vim and Emacs"
-       :website "https://github.com/ocaml/merlin"
-       :type github
-       :pkgname "ocaml/merlin"
-       ;; :build `(("./configure")
-       ;;          ("make")
-       ;;          ("make" "install"))
-       )

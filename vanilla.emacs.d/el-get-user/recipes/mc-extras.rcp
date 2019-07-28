@@ -1,4 +1,0 @@
-(:name mc-extras
-       :description "Extra functions for multiple-cursors mode"
-       :type github
-       :pkgname "knu/mc-extras.el")

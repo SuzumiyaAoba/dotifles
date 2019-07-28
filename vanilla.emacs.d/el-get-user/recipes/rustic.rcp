@@ -1,4 +1,0 @@
-(:name rustic
-       :description "Rust developemnt environment"
-       :type github
-       :pkgname "brotzeit/rustic")
