@@ -14,7 +14,7 @@ __debug() {
 }
 
 __error() {
-    echo -e "${__text_bold}${__fg_red}[ERROR]${__escape_reset}\t$1"
+    echo -e "${__text_bold}${__fg_red}[ERROR]${__escape_reset}\t$1" 1>&2
 }
 
 __warn() {
@@ -33,7 +33,7 @@ __success() {
 
 __fail() {
     __clear_line
-    echo -e "${__text_bold}${__fg_red}[ERROR]${__escape_reset}\t$1${__fg_red}${__fail_mark}${__escape_reset} $2"
+    echo -e "${__text_bold}${__fg_red}[ERROR]${__escape_reset}\t$1${__fg_red}${__fail_mark}${__escape_reset} $2" 1>&2
 }
 
 __clear_line() {
