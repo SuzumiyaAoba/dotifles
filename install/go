@@ -1,12 +1,11 @@
 github.com/rogpeppe/godef
--u github.com/nsf/gocode
-github.com/golang/lint/golint
+github.com/nsf/gocode
+golang.org/x/lint/golint
 github.com/kisielk/errcheck
--u -v golang.org/x/tools/cmd/guru
+golang.org/x/tools/cmd/guru
 
 github.com/motemen/ghq
 golang.org/x/tools/cmd/goimports
--u github.com/golang/dep/cmd/dep
 
 github.com/gohugoio/hugo
 

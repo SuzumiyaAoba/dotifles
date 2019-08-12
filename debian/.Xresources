@@ -1,0 +1,13 @@
+! Emacs上でuim-skkとddskkが衝突しないための設定
+Emacs*useXIM:false
+
+! 4Kモニタのための設定
+! HiDPI - ArchWiki: https://wiki.archlinux.org/index.php/HiDPI#X_Resources
+Xft.dpi: 180
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
+

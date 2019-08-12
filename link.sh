@@ -1,6 +1,7 @@
 #!/bin/bash
 
-. ./util.sh
+
+source "${BASH_SOURCE%/*}/lib/libs.sh"
 
 dotfiles=`ls -1d .[^.]* | grep -v "\.swp$"`
 
@@ -14,8 +15,12 @@ dotfiles=(`(echo -n "${dotfiles[@]}" "${ignores[@]}" | sort -u; echo -n "${ignor
 
 dotfiles=(${dotfiles[@]} `find .config -type f`)
 
+__info "Link dotfiles"
+
 for e in ${dotfiles[@]}; do
-    sfrm ~/$e
-    info "link: `pwd`/${e} -> ~/${e}"
+    __sfrm ~/$e
+    __info "link: `pwd`/${e} -> ~/${e}"
     ln -s `pwd`/$e ~/$e
 done
+
+__success "" "Complete to link dotfiles"
